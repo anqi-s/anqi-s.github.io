@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anqi Shen's Personal Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(181, 196, 210)
+        }
+
+        .title {
+            width: max-content;
+            margin-left: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .navbar div {
+            width: 100px;
+            text-align: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            transition: transform 0.3s;
+        }
+
+        .navbar a:hover {
+            font-weight: bold;
+        }
+
+        .about {
+            font-size: 18px;
+        }
+
+        .education {
+            margin-top: 125px;
+            margin-left: 20px;
+        }
+
+        .module-name-1 {
+            font-size: 125%;
+            margin-top: 110px;
+            margin-bottom: 50px;
+        }
+
+        .grid-container {
+                display: grid;
+                grid-template-areas: 
+                    "logo-1 uni-1"
+                    "empty-1 content-1"
+                    "logo-2 uni-2"
+                    "empty-2 content-2"
+                ;
+                grid-template-columns: 1fr 12fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+        }
+
+        .neu-logo {
+            display: flex;
+            align-items: center;
+            grid-area: logo-1;
+        }
+
+        .neu-uni {
+            display: flex;
+            align-items: center;
+            grid-area: uni-1;
+        }
+
+        .neu-content {
+            display: flex;
+            align-items: first baseline;
+            grid-area: content-1;
+        }
+
+        .un-logo {
+            display: flex;
+            align-items: center;
+            grid-area: logo-2;
+        }
+
+        .un-uni {
+            display: flex;
+            align-items: center;
+            grid-area: uni-2;
+        }
+
+        .un-content {
+            display: flex;
+            align-items: first baseline;
+            grid-area: content-2;
+        }
+
+        .empty-cell-1 {
+            grid-area: empty-1;
+        }
+
+        .empty-cell-2 {
+            grid-area: empty-2;
+        }
+
+        .experience {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+
+        .module-name-2 {
+            font-size: 125%;
+            margin-bottom: 50px;
+        }
+
+        li {
+            margin-bottom: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">
+            <h2>Anqi Shen</h2>
+        </div>
+        <div class="navbar">
+            <div class="about">
+                <strong><u>about</u></strong>
+            </div>
+            <div class="project">
+                <a href="projects.html">projects</a>
+            </div>
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="hobby">
+                <a href="blog.html">hobby</a>
+            </div>
+        </div>
+    </div>
+    <div class="education">
+        <p class="module-name-1"><em>1. Education</em></p>
+        <div class="grid-container">
+            <div class="neu-logo">
+                <img src="image/neu.png" alt="NEU logo" width="60" height="60" />
+            </div>
+            <div class="neu-uni">
+                Northeastern University
+            </div>
+            <div class="neu-content">
+                <span>MSc Computer Science;&nbsp;</span>
+                <span>09/2023-06/2026</span>
+            </div>
+            <div class="un-logo">
+                <img src="image/un.png" alt="UN logo" width="60" height="60" />
+            </div>
+            <div class="un-uni">
+                University of Nottingham
+            </div>
+            <div class="un-content">
+                <span>BSc (with Honors) Economics;&nbsp;</span>
+                <span>09/2019-06/2023</span>
+            </div>
+            <div class="empty-cell-1"></div>
+            <div class="empty-cell-2"></div>
+        </div>
+    </div>
+    <div class="experience">
+        <p class="module-name-2"><em>2. Experience</em></p>
+        <ul>
+            <li>Worked as a Data Analyst Intern in Wisers Information Limited; 07/2022-09/2022; Shanghai</li>
+            <li>Worked as a Strategy Intern in Keenon Robotics; 05/2022 - 06/2022; Shanghai</li>
+            <li>Worked as a Marketing Intern in HRnetGroup; 08/2021-12/2021; Shanghai</li>
+            <li>Oliver Wyman Impact Mainland China Case Competition; 03/2022-04/2022; China</li>
+            <li>The Second "Xufuji Cup (Nestlé)" Marketing Competition, National Top15; 07/2021-10/2021; China</li>
+            <li>L'Oreal Campus Ambassador Business Challenge; 06/2021-07/2021; China</li>
+            <li>Unilever Campus Business Thinking Challenge; 03/2021-04/2021; China</li>
+            <li>Marketing Manager of AIESEC UNNC; 09/2019-06/2020; Ningbo</li>
+            <li>Completed Sakura Women Half Marathon; 03/2023; Ningbo</li>
+            <li>Completed Jiulong Lake Half Marathon; 03/2023; Ningbo</li>
+        </ul>
+    </div>
+  </body>
+</html>
+
