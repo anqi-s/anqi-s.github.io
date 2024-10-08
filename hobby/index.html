@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hobby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(181, 196, 210)
+        }
+
+        .title {
+            width: max-content;
+            margin-left: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .navbar div {
+            width: 100px;
+            text-align: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            transition: transform 0.3s;
+        }
+
+        .navbar a:hover {
+            font-weight: bold;
+        }
+
+        .hobby {
+            font-size: 18px;
+        }
+
+        .grid-container {
+            margin: 20px;
+            padding-top: 100px;
+            display: grid;
+            grid-template-areas: 
+                "first-col second-col"
+            ;
+            grid-template-columns: 1fr 5fr;
+            grid-gap: 10px;
+            margin-bottom: 50px;
+        }
+
+        img {
+            grid-area: first-col;
+            border-radius: 50%;
+        }
+
+        .hobby-content {
+            grid-area: second-col;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            .hobby {
+                font-size: 12px;
+            }
+
+            .navbar a {
+                font-size: 12px;
+            }
+
+            .navbar div {
+                width: 50px;
+            }
+
+            body {
+                font-size: 80%;
+            }
+
+            img {
+                width: 80px;
+                height: auto;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">
+            <h2>Anqi Shen</h2>
+        </div>
+        <div class="navbar">
+            <div class="about">
+                <a href="../index.html">about</a>
+            </div>
+            <div class="project">
+                <a href="../project/index.html">project</a>
+            </div>
+            <div class="contact">
+                <a href="../contact/index.html">contact</a>
+            </div>
+            <div class="hobby">
+                <strong><u>hobby</u></strong>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="photo">
+            <img src="../image/photo.jpg" alt="photo" width="200" height="200" />
+        </div>
+        <div class="hobby-content">
+            <span>
+                <strong>Books:</strong>
+                <ul>
+                    <li>the Wisdom of Life</li>
+                    <li>Count of Monte Cristo</li>
+                    <li>the Wonderful Wizard of Oz</li>
+                    <li>the Little Prince</li>
+                    <li>Jane Eyre</li>
+                </ul>
+                <strong>Video games:</strong>
+                <ul>
+                    <li>League of Legends</li>
+                    <li>Honor of Kings</li>
+                </ul>
+                <strong>Sports:</strong>
+                <ul>
+                    <li>Yoga</li>
+                    <li>Volleyball</li>
+                    <li>Swimming</li>
+                    <li>Dancing</li>
+                    <li>Writing novels</li>
+                </ul>
+                <strong>Movies:</strong>
+                <ul>
+                    <li>Twilight</li>
+                    <li>VX-men</li>
+                    <li>Fast & Furious</li>
+                    <li>007</li>
+                    <li>Mission Impossible</li>
+                    <li>the Shawshank Redemption</li>
+                    <li>Flipped</li>
+                    <li>Interstellar</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+  </body>
+</html>

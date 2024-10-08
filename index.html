@@ -49,6 +49,9 @@
 
         .about {
             font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .education {
@@ -63,16 +66,16 @@
         }
 
         .grid-container {
-                display: grid;
-                grid-template-areas: 
-                    "logo-1 uni-1"
-                    "empty-1 content-1"
-                    "logo-2 uni-2"
-                    "empty-2 content-2"
-                ;
-                grid-template-columns: 1fr 12fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                grid-gap: 10px;
+            display: grid;
+            grid-template-areas: 
+                "logo-1 uni-1"
+                "empty-1 content-1"
+                "logo-2 uni-2"
+                "empty-2 content-2"
+            ;
+            grid-template-columns: 1fr 12fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
         }
 
         .neu-logo {
@@ -132,6 +135,33 @@
 
         li {
             margin-bottom: 30px;
+        }
+
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 18px;
+            }
+
+            .about {
+                font-size: 12px;
+            }
+
+            .navbar a {
+                font-size: 12px;
+            }
+
+            .navbar div {
+                width: 50px;
+            }
+
+            body {
+                font-size: 80%;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
     </style>
   </head>
@@ -199,4 +229,3 @@
     </div>
   </body>
 </html>
-
